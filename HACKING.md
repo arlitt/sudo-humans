@@ -179,3 +179,14 @@ If you wanted to add one, you could do the following:
 6. Once the file has been saved, check that the bug has been fixed.
 7. If your fix worked, you can now submit a pull request to get your fix into
    the official sudo-humans repository.
+
+# troubleshooting
+
+A recent re-architecting attempt may cause local instances of sudohumans to fail with an error message like "Error: EEXIST: File already exists, mkdir $PATH/sudoroom-data"
+
+To fix this, run
+
+```
+$ rm sudoroom-data
+$ mkdir sudoroom-data
+```
